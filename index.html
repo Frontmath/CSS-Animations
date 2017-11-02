@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS animations</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	
+
+		<header>
+			<div>
+			
+			<span class="translate">CSS animations</span>
+			<span class="scale">CSS animations</span>			
+				<h1>CSS animations</h1>
+			</div>
+
+		</header>
+
+	<div class="page-wrapper">
+
+		<div class="clear">
+			<main>
+				<h2>CSS3 2D Transforms</h2>
+					<p>In this chapter you will learn about the following 2D transformation methods:</p>
+					
+						    <ul>
+						    	<li>translate()</li>
+						    	<li>rotate()</li>
+						    	<li>scale()</li>
+						    	<li>skewX()</li>
+						    </ul>
+					<h3>The translate() Method</h3>
+						<p>The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).</p>
+						<div class="demo">
+							<div class="example01"><img src="images/01.png" alt="Star!"></div>
+						</div>
+					<h3>The rotate() Method</h3>
+						<p>The rotate() method rotates an element clockwise or counter-clockwise according to a given degree.</p>
+						<div class="demo">
+							<div class="example02"><img src="images/01.png" alt="Star!"></div>							
+						</div>
+					<h3>The scale() Method</h3>
+						<p>The scale() method increases or decreases the size of an element (according to the parameters given for the width and height).</p>
+						<div class="demo">
+							<div class="example03"><img src="images/01.png" alt="Star!"></div>
+						</div>
+					<h3>The skewX() Method</h3>
+						<p>The skewX() method skews an element along the X-axis by the given angle.</p>
+						<div class="demo">
+								<div class="example04"><img src="images/01.png" alt="Star!"></div>
+							</div>
+
+			</main>
+			<aside>
+				<div>
+					<h2>CSS3 Transitions</h2>
+						<p>CSS3 transitions allows you to change property values smoothly (from one value to another), over a given duration.</p>
+						<h3>How to Use CSS3 Transitions?</h3>
+						<p>To create a transition effect, you must specify two things:</p>
+
+					    <ul>
+					    	<li>the CSS property you want to add an effect to</li>
+					    	<li>the duration of the effect</li>
+					    </ul>
+					<p>You can change several property values. Also you can specify the speed curve of the transition effect(transition-timing-function) and a delay (in seconds) for the transition effect(transition-delay).</p>
+
+					<h3>transition-timing-function</h3>
+
+					<p>The transition-timing-function property can have the following values:</p>
+					<ul>
+						<li><span>ease</span> - specifies a transition effect with a slow start, then fast, then end slowly (this is default)</li>
+						<li><span>linear</span> - specifies a transition effect with the same speed from start to end</li>
+						<li><span>ease-in</span> - specifies a transition effect with a slow start</li>
+						<li><span>ease-out</span> - specifies a transition effect with a slow end</li>
+						<li><span>ease-in-out</span> - specifies a transition effect with a slow start and end</li>
+						<li><span>cubic-bezier(n,n,n,n)</span> - lets you define your own values in a cubic-bezier function</li>
+					</ul>
+
+					<p>The CSS3 transition properties can be specified one by one, like this:</p>
+					<center>
+						<img src="images/02.png" alt="Image!">
+					</center>
+					<p>or by using the shorthand property transition:</p>
+					<center>
+						<img src="images/03.png" alt="Image!">
+					</center>
+				</div>
+				
+				<div class="practise01">
+
+					<div class="earth">
+						<div class="circle first"></div>
+						<div class="circle second"></div>
+						<div class="circle third"></div>
+						<div class="circle forth"></div>	
+					</div>
+
+				</div>
+
+			</aside>
+		</div>
+		<div class="practise02">				
+
+			<div class="wrap">						
+				<div class="cube2">
+					<div class="side2 top2">TOP</div>
+					<div class="side2 bottom2">BOTTOM</div>
+					<div class="side2 right2">RIGHT</div>
+					<div class="side2 left2">LEFT</div>
+					<div class="side2 front2">FRONT</div>
+					<div class="side2 back2">BACK</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>			
+
+			<h2>What are CSS3 Animations?</h2>
+
+				<p>An animation lets an element gradually change from one style to another. You can change as many CSS properties you want, as many times you want. To use CSS3 animation, you must first specify some keyframes for the animation.Keyframes hold what styles the element will have at certain times.</p>
+
+			<h2>The @keyframes Rule</h2>
+
+				<p>When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.
+
+				To get an animation to work, you must bind the animation to an element.	</p>
+				<span><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1" target="_blank">Try it yourself</a></span>
+
+				<p><strong>Note:</strong> <em>If the animation-duration property is not specified, the animation will have no effect, because the default value is 0.</em></p> 
+
+				<p>In the example above(Try it yourself) we have specified when the style will change by using the keywords "from" and "to" (which represents 0% (start) and 100% (complete)).<br>	
+				It is also possible to use percent. By using percent, you can add as many style changes as you like.</p>
+				<span><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2" target="_blank">Try it yourself</a></span>
+
+				<h2>Animation-delay and animation-iteration-count</h2>
+
+				<p>The animation-delay property specifies a delay for the start of an animation. The animation-iteration-count property specifies the number of times an animation should run. To make the animation continue for ever - use the value "infinite".<br><br>
+				<strong>Note:</strong><em> animation-timing-function has the same values as transition-timing-function property(see above).</em></p>
+
+				<h2>animation-direction</h2>
+
+				<p>The animation-direction property is used to let an animation run in reverse direction or alternate cycles.</p>
+				<span><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_direction" target="_blank">Try it yourself(reverse)</a></span><br>
+				<br>
+				<span><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_direction2" target="_blank">Try it yourself(alternate)</a></span>
+
+				<h2>Animation Shorthand Property</h2>
+
+				<p>The example below uses six of the animation properties:</p>
+					 <center>
+							<img src="images/07.png" alt="Image!">
+					 </center>
+				<p>The same animation effect as above can be achieved by using the shorthand animation property:</p>
+					 <center>
+							<img src="images/08.png" alt="Image!">
+					 </center>
+		</footer>
+
+	</div>
+	
+</body>
+</html>
